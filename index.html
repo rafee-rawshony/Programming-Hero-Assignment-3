@@ -12,16 +12,72 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <!-- Style -->
     <style>
         .font-lato {
             font-family: 'Lato', sans-serif;
         }
+
+        .max-width {
+            max-width: 1440px;
+            margin-inline: auto;
+        }
     </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'pink-primary': "#F85559;"
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
+    <header class="max-width">
+        <nav class="lg:bg-pink-primary px-2 lg:px-12 py-2 pr-3 rounded-full my-12">
+            <div class="navbar flex-row-reverse justify-between lg:flex-row">
+                <div class="navbar-start justify-end lg:justify-start">
+                    <ul class="hidden lg:flex">
+                        <li class="mr-7"><a class="font-medium text-white" href="">Home</a></li>
+                        <li class="mr-7"><a class="font-medium text-white" href="">About Us</a></li>
+                        <li class="mr-7"><a class="font-medium text-white" href="">Shop</a></li>
+                        <li class="mr-7"><a class="font-medium text-white" href="">All Fruits</a></li>
+                    </ul>
+                    <!-- Hidden Nav Bar -->
+                    <div class="dropdown lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-6 h-6 ">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </div>
+                    <!-- Hidden Nav Bar -->
+                </div>
+                <div class="navbar-center ">
+                    <img class="w-10 block mr-1" src="/images/logo.png" alt="">
+                    <a class="text-4xls text-black lg:text-white font-bold text-xl lg:text-4xl">Fruit Burst</a>
+                </div>
+                <div class="navbar-end hidden lg:flex -mr-8">
+                    <input class="outline-0 px-4 py-3 rounded-full relative w-72" type="text" placeholder="Search here">
+                    <div class="absolute mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Banner Section -->
 
+      
+    <!--  -->
 </body>
 
 </html>
